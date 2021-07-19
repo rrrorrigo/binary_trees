@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stdlib.h>
 
 /**
  * binary_tree_insert_right - Stores recursively each level in an array of strings
@@ -10,15 +11,23 @@
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 	binary_tree_t *node = malloc(sizeof(binary_tree_t));
-		if (!node)
-			return NULL;
-		
-			
-		if (!parent->right)
-		{
-			node->right = parent;
-			node->parent = parent->parent;
-			node->left = NULL;
-			node->n = value;
-		}
+	if (!node)
+		return NULL;
+
+	if (!parent)
+		return NULL; 
+	
+	node->n = value;
+	node->right = NULL;
+	node->left =NULL;
+	node->parent = parent;
+
+	if (parent->right)
+	{
+		parent->right->parent = node;
+		node->right = parent->right;
+	}
+	parent->right = node;
+
+	return (node);
 }
