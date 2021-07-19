@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * print_t - Stores recursively each level in an array of strings
+ * binary_tree_t - Stores recursively each level in an array of strings
  *
  * @parent: Pointer to the node to print
  * @value: Offset to print
