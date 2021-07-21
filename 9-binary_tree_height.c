@@ -1,15 +1,12 @@
 #include "binary_trees.h"
 #include <stdlib.h>
-
 /**
- * 
- * binary_tree_height - traverse recursively and return the length
+ * binary_tree_height - traverse recursively and return the height
  *
  * @tree: pointer to tree
- * Return: length of node
+ * Return: height of node
  *
  */
-
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t height_l;

@@ -3,9 +3,7 @@
 
 /**
  * delete_tree - Stores recursively each level in an array of strings
- *
- * @parent: Pointer to the node to print
- * @value: Offset to print
+ * @node: pointer to node of binary tree
  * Return: length of printed tree after process
  */
 

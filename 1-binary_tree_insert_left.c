@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 #include <stdlib.h>
 /**
- * binary_tree_insert_left - Stores recursively each level in an array of strings
+ * binary_tree_insert_left - Stores recursively each level in an array of str
  *
  * @parent: Pointer to the node to print
  * @value: Offset to print
@@ -11,17 +11,15 @@
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *node = malloc(sizeof(binary_tree_t));
-	if (!node)
-		return NULL;
 
+	if (!node)
+		return (NULL);
 	if (!parent)
-		return NULL; 
-	
+		return (NULL);
 	node->n = value;
 	node->right = NULL;
-	node->left =NULL;
+	node->left = NULL;
 	node->parent = parent;
-
 	if (parent->left)
 	{
 		parent->left->parent = node;

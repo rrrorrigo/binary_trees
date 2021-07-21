@@ -1,11 +1,9 @@
 #include "binary_trees.h"
 #include <stdlib.h>
-
 /**
- * 
- * binary_tree_inorder - Stores recursively each level in an array of strings
- *
- * @node: Offset to print
+ * binary_tree_inorder - function that goes through a binary tree
+ * @tree: pointer to node of binary tree
+ * @func: pointer to function with parameter int
  * Return: length of printed tree after process
  *
  */

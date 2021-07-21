@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 #include <stdlib.h>
 /**
- * binary_tree_nodes - traverse recursively each level and return the depth
+ * binary_tree_nodes - function that counts the nodes with at least 1 child
  *
  * @tree: pointer to tree
- * Return: length of printed tree after process
+ * Return: number of nodes with at least 1 child, otherwise 0
  */
 size_t binary_tree_nodes(const binary_tree_t *tree)
 {

@@ -1,14 +1,9 @@
 #include "binary_trees.h"
 #include <stdlib.h>
-
 /**
- * 
- * binary_tree_postorder - Stores recursively each level in an array of strings
- *
- * @node: Offset to print
+ * binary_tree_postorder - function that goes through a binary tree
  * @tree: pointer to the root
- * Return: length of printed tree after process
- *
+ * @func: pointer to function with parameter int
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
@@ -22,4 +17,3 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 	}
 	func(tree->n);
 }
-
