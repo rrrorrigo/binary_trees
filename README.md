@@ -1,6 +1,6 @@
 # 0x1D. C - Binary trees
 
-!(https://i.imgur.com/BkwKBTx.png)
+![trees](https://i.imgur.com/BkwKBTx.png)
 
 ## Resources
 
