@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * delete_tree - Stores recursively each level in an array of strings
+ * binary_tree_is_leaf - Stores recursively each level in an array of strings
  *
- * @parent: Pointer to the node to print
- * @value: Offset to print
+ * @node: pointer to the node to check
  * Return: length of printed tree after process
  */
 int binary_tree_is_leaf(const binary_tree_t *node)

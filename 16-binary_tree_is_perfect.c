@@ -1,5 +1,6 @@
 #include "binary_trees.h"
 #include <stdlib.h>
+#include "9-binary_tree_height.c"
 /**
  * binary_tree_height - traverse recursively each level and return the depth
  *
@@ -14,9 +15,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
     if (tree->left)
-        l = binary_tree_is_perfect(tree->left);
+        l = binary_tree_height(tree->left);
     if (tree->right)
-        r = binary_tree_is_perfect(tree->right);
+        r = binary_tree_height(tree->right);
     if (r == l)
         return (1);
     else

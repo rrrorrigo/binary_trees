@@ -3,7 +3,7 @@
 
 /**
  * 
- * binary_tree_height - traverse recursively each level and return the depth
+ * binary_tree_depth - traverse recursively each level and return the depth
  *
  * @tree: pointer to tree
  * Return: length of printed tree after process

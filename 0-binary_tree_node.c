@@ -1,13 +1,12 @@
 #include "binary_trees.h"
 #include <stdlib.h>
 /**
- * binary_tree_t - Stores recursively each level in an array of strings
+ * binary_tree_node - Stores recursively each level in an array of strings
  *
  * @parent: Pointer to the node to print
  * @value: Offset to print
  * Return: length of printed tree after process
  */
-
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {

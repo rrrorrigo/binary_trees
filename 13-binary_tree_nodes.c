@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 #include <stdlib.h>
 /**
- * binary_tree_height - traverse recursively each level and return the depth
+ * binary_tree_nodes - traverse recursively each level and return the depth
  *
  * @tree: pointer to tree
  * Return: length of printed tree after process

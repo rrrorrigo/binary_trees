@@ -4,7 +4,7 @@
  * 
  * binary_tree_is_root - Stores recursively each level in an array of strings
  *
- * @node: Offset to print
+ * @node: ponter to the node to check
  * Return: length of printed tree after process
  *
  */

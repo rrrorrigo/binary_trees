@@ -4,16 +4,16 @@
 /**
  * 
  * binary_tree_preorder - Stores recursively each level in an array of strings
- *
+ * @func: ponter to the function passed
  * @node: Offset to print
  * Return: length of printed tree after process
  *
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-        func(tree->n);
-        if (tree->left)
-                binary_tree_preorder(tree->left, func);
-        if (tree->right)
-                binary_tree_preorder(tree->right, func);
+	func(tree->n);
+	if (tree->left)
+		binary_tree_preorder(tree->left, func);
+	if (tree->right)
+		binary_tree_preorder(tree->right, func);
 }
