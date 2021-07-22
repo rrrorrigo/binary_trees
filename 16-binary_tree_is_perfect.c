@@ -35,5 +35,4 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if ((binary_tree_size(tree) + 1) == _pow_recursion(2, height))
 		return (1);
 	return (0);
-	
 }
