@@ -8,6 +8,8 @@
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
+	if (!node)
+		return (NULL);
 	if (node->parent)
 	{
 		if (node->parent->right && node != node->parent->right)
