@@ -1,6 +1,5 @@
 #include "binary_trees.h"
 #include <stdlib.h>
-
 /**
  * delete_tree - Stores recursively each level in an array of strings
  * @node: pointer to node of binary tree
